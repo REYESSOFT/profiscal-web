@@ -1,5 +1,5 @@
 
-/* Nuevo diseño corporativo REYVAL S.A. */
+/* Estilo corporativo REYVAL S.A. */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -14,17 +14,18 @@ header {
   color: white;
   display: flex;
   align-items: center;
-  padding: 15px 30px;
-  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 header img {
-  height: 60px;
-  margin-right: 20px;
+  height: 40px;
+  max-width: 120px;
+  object-fit: contain;
+  margin-right: 15px;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -32,14 +33,14 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 section {

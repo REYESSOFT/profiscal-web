@@ -1,6 +1,4 @@
 
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formulario-contacto");
 
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const aviso = document.createElement("p");
     aviso.style.marginTop = "10px";
 
-    // Eliminar mensajes anteriores
     const existente = form.querySelector("p.aviso");
     if (existente) form.removeChild(existente);
 

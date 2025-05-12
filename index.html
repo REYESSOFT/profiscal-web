@@ -24,15 +24,68 @@
     </nav>
   </header>
 
-  <section id="servicios">
-    <h2>Servicios Contables</h2>
+  
+<section id="servicios">
+  <h2>Servicios que Ofrecemos</h2>
+  <p>
+    Para nosotros es de gran importancia como profesional independiente brindar con el más alto estándar de calidad en servicios a través de los diversos segmentos de negocio de forma personalizada con nuestro equipo humano y profesional en las siguientes áreas:
+  </p>
+
+  <div class="botonera-servicios">
+    <button onclick="mostrarContenido('auditoria')">Auditoría Financiera</button>
+    <button onclick="mostrarContenido('outsourcing')">Outsourcing Contable</button>
+    <button onclick="mostrarContenido('tributaria')">Consultoría Tributaria</button>
+    <button onclick="mostrarContenido('talento')">Asesoría en Talento Humano</button>
+    <button onclick="mostrarContenido('legal')">Consultoría Societaria y Legal</button>
+  </div>
+
+  <div id="contenido-servicio" style="margin-top: 25px;"></div>
+</section>
+
+<script>
+function mostrarContenido(tipo) {
+  const contenido = {
+    auditoria: `<p><strong>Auditoría Financiera:</strong> Los trabajos relacionados a este servicio se realizan aplicando las Normas Internacionales de Auditoría (NIA), y consiste en examinar los Estados Financieros del cliente con el fin de emitir una opinión sobre la razonabilidad de las cifras presentadas en dichos reportes contables. Este informe es para uso de las partes interesadas tales como; La Gerencia, Junta de Accionistas, Inversionistas, Entes de Control y demás que los soliciten como entidades financieras o crediticias.</p>`,
+    outsourcing: `<p><strong>Outsourcing Contable:</strong> Este servicio está orientado a ser responsables de la contabilidad del cliente, para lo cual se lleva in-house o externamente los registros contables, clasificando y analizando las transacciones que se generen a diario. Emitiremos los Estados Financieros mensuales aplicando las Normas Internaciones de Información Financiera – NIIF ya sea Pyme o Full, para la apropiada toma de decisiones gerenciales.</p>`,
+    tributaria: `<p><strong>Consultoría Tributaria:</strong> Este servicio está direccionado al asesoramiento fiscal de acuerdo a la normativa tributaria vigente para mitigar posibles contingentes fiscales o a la optimización de recursos impositivos. Contamos con un equipo de expertos en la materia tributaria, quienes se encuentran a la vanguardia y constante actualización de los cambios normativos que efectúan los entes de control tributario.</p>`,
+    talento: `<p><strong>Asesoría en Talento Humano:</strong> Teniendo en cuenta que los colaboradores en general de un ente se diferencian tanto en sus cualidades físicas como intelectuales, para lograr los objetivos de la Empresa es necesario que estas diferencias agreguen valor a la productividad y servicio al público. Nuestra asesoría en esta área es brindarle el servicio de:
     <ul>
-      <li>Declaraciones de impuestos</li>
-      <li>Contabilidad general</li>
-      <li>Auditorías</li>
-      <li>Asesoría financiera</li>
-    </ul>
-  </section>
+      <li>Elaboración de manuales internos de funciones y cargos.</li>
+      <li>Elaboración de reglamento interno de trabajo, seguridad industrial y salud ocupacional.</li>
+      <li>Evaluaciones de desempeño.</li>
+      <li>Cálculos de beneficios sociales.</li>
+      <li>Mediación en conflictos trabajador-patrono.</li>
+      <li>Trámites o registros ante los entes de control laboral. (MRL y IESS)</li>
+      <li>Contratos de trabajo y actas de finiquito.</li>
+      <li>Asesoría en juicios laborales o trámites de visto bueno.</li>
+    </ul></p>`,
+    legal: `<p><strong>Consultoría Societaria y Legal:</strong> Considerando la necesidad de diversos clientes, mantenemos un convenio de asociación y colaboración estratégica con una prestigiosa firma de abogados expertos en llevar a cabo temas societarios y en las determinaciones de causas legales o judiciales, obteniendo un resultado eficaz en las resoluciones a favor de nuestros encargos.</p>`
+  };
+
+  document.getElementById("contenido-servicio").innerHTML = contenido[tipo];
+}
+</script>
+
+<style>
+.botonera-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.botonera-servicios button {
+  background-color: #F99C1C;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.botonera-servicios button:hover {
+  background-color: #F15A24;
+}
+</style>
+
 
   <section id="equipo">
     <h2>Nuestro Equipo</h2>
